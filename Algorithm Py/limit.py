@@ -19,5 +19,20 @@ def limit (num, max=None, min=None):
     return list_num
 
 
+"""
+doctest
+        --> in terminal : python -m doctest name_file.py 
+        --> in telminal : python -m doctest -v name_file.py   #(to see all operations)
 
+        
+        
+>>> limit([1, 2, 3, 4, 5], 3, 3)
+[3]
+
+>>> limit([1, 2, 3, 4, 5], None, 3)
+[3, 4, 5]
+
+>>> limit([1, 2, 3, 4, 5], 3, None)
+[1, 2, 3]
+"""
 # print(limit([1, 2, 3, 4, 5], 3,3))    #[3]

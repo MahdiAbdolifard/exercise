@@ -20,8 +20,15 @@ def top_one(numbers):
         if count > max_count:
             max_count = count
             max_number = number
-    # return f'The number {max_number} is the most repeated ({max_count} times).' 
-    return count.items()
+    return f'The number {max_number} is the most repeated ({max_count} times).' 
 
 
-print(top_one([1, 2, 3, 2, 2, 3, 4, 5, 5, 5, 2]))  # (2, 3)
+
+"""
+doctest
+
+>>> top_one([1, 2, 3, 2, 2, 3, 4, 5, 5, 5, 2, 2])
+"The number 2 is the most repeated (5 times)."
+"""
+
+# print(top_one([1, 2, 3, 2, 2, 3, 4, 5, 5, 5, 2]))  # (2, 3)
