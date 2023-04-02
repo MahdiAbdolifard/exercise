@@ -6,7 +6,7 @@
 """
 
 
-def top_one(numbers):
+def top_one(numbers: list) -> str:
     counts = {}
     for number in numbers:
         if number in counts:

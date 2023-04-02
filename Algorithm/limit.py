@@ -9,7 +9,7 @@
 """
 
 
-def limit (num, max=None, min=None):
+def limit (num:list, max:int=None, min:int=None) -> list:
 
     checke_max = lambda i : True if max is None else i <= max
     check_min =  lambda i : True if min is None else i >= min
