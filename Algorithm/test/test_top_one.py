@@ -1,5 +1,5 @@
 import unittest
-import top_one
+from Algorithm import top_one
 
 class TestTop_one(unittest.TestCase):
     def tset_top_one(self):

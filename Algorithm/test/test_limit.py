@@ -1,5 +1,13 @@
+"""
+unittest
+    for test in terminal --> python -m unittest test_name.py
+"""
+
+
+
+
 import unittest
-import limit
+from Algorithm import limit
 
 class TestLimit (unittest.TestCase):
     def test_limit(self):
