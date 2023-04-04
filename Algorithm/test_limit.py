@@ -7,7 +7,8 @@ unittest
 
 
 import unittest
-from Algorithm import limit
+# from Algorithm import limit 
+import limit
 
 class TestLimit (unittest.TestCase):
     def test_limit(self):
