@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>صفحه‌ی اصلی</title>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+        main {
+            margin: 20px;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/hello">Hello Page</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% for todo in all %}
+            <h3><a href="/detail/{{todo.id}}">{{todo.title}}</a></h3>
+        {% endfor %}
+    </main>
+</body>
+</html>
