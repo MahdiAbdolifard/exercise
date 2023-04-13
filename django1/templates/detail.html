@@ -29,13 +29,31 @@
             color: #999;
             font-size: 14px;
         }
+        .delete-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .update-button {
+            background-color: rgb(17, 76, 201);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <section>
         <h2>{{ todo.title }}</h2>
-        <small>{{ todo.created }}</small>
+        <small>{{ todo.created }}</small><hr/>
         <p>{{ todo.body }}</p>
+        <a href="{% url 'update' todo.id %}" class="update-button" >َUpdate</a>
+        <a href="{% url 'delete' todo.id %}" class="delete-button" >Delete</a>
     </section>
 </body>
 </html>
