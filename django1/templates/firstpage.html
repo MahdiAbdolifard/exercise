@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>welcome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+        --primary-color: #1abc9c;
+        --secondary-color: #3498db;
+        --tertiary-color: #f39c12;
+        --light-color: #f1f1f1;
+        --dark-color: #333;
+                }
+        body {
+            background-color: #eaeaea;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #fff;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            margin-top: 0;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            max-width: 600px;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 40%;
+            max-width: 200px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        button.signin {
+            background-color: #4CAF50;
+        }
+
+        button.signup {
+            background-color: #ff5252;
+        }
+        
+        a {
+        color: var(--light-color);
+        text-decoration: none;
+        font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1> Welcome </h1>
+
+    <div class="button-container">
+        <button class="signin"><a href="{% url 'login'%}">Login</a></button>
+        <button class="signup"><a href="{% url 'user_register'%}">Register</a></button>
+    </div>
+
+</body>
+</html>
